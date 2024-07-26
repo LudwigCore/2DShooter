@@ -23,13 +23,6 @@ public class DungeonGenerator : MonoBehaviour
     void GridGenerator()
     {
         GridVector = new Vector2[GridSize, GridSize];
-        for (int x = 0; x < GridSize; x++)
-        {
-            for (int y = 0; y < GridSize; y++)
-            {
-
-            }
-        }
     }
     void dungeonGenerator()
     {
