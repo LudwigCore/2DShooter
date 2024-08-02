@@ -1,20 +1,15 @@
 using UnityEngine;
 public class Entity : MonoBehaviour
 {
-    // Inventory
-    public int[] Bullets;
-    public string Items;
+    // Entity
     public string Name;
     public string Description;
+    // Inventory
+    public int[] Bullets;
+    public string[] Items;
+    public int[] Items_Amount;
     public string[] Weapons;
     // Health Stats
-    public int MaxHealth; // How High Health Can Be
-    public int Health;
-    public int MinHealth; // How Low Health Can Be Before You Die
-    public string Health_Weakness;
-    public int Health_Weakness_Power;
-    public string Health_Ressistence;
-    public int Health_Ressistence_Power;
     // Defence Stats
     public int MaxDefence; // How High Health Can Be
     public int Defence;
@@ -37,8 +32,7 @@ public class Entity : MonoBehaviour
     public int MinDamage; // The Lowest Damage Will Be For Any Hit
     public string Damage_Type; // Aka For Weakness And Ressistence
     // Speed Stats
-    public float Movement_Speed;
-    public float MaxMovement_Speed;
+    public float Movement_Speed; // The Speed You Accelerate
+    public float MaxMovement_Speed; // The Max Speed Of Movement Speed
     public float Attack_Speed;
-    public float MaxAttack_Speed;
 }
